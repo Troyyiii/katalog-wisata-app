@@ -3,6 +3,7 @@ import 'package:aplikasi_katalog_wisata/latihan.dart';
 import 'package:aplikasi_katalog_wisata/list_item.dart';
 import 'package:aplikasi_katalog_wisata/model/tourism_place.dart';
 import 'package:aplikasi_katalog_wisata/provider/done_tourism_provider.dart';
+import 'package:aplikasi_katalog_wisata/tugas2.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -105,7 +106,7 @@ class _TourismListState extends State<TourismList>{
         return InkWell(
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return DetailScreen(place: place);
+              return Tugas2(place: place);
             }));
           },
           child: Consumer<DoneTourismProvider>(
