@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
   MainScreen({Key? key}) : super(key: key);
-
+  
   @override
   _MainScreenState createState() => _MainScreenState();
 }
@@ -25,16 +25,14 @@ class _MainScreenState extends State<MainScreen>{
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) {
-                  return DoneTourismList(
-                    doneTourismPlaceList: doneTourismPlaceList
-                  );
+                  return const DoneTourismList();
                 }),
               );
             },
           )
         ],
       ),
-      body: TourismList(doneTourismPlaceList: doneTourismPlaceList),
+      body: TourismList(),
     );
   }
 }
